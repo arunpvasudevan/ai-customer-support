@@ -1,22 +1,64 @@
-# AI Customer Support Assistant
+A beginner-friendly AI portfolio project built using Python, Ollama, Llama 3.2 1B, Streamlit, and SQLite.
 
-A Python application that uses a local Llama AI model through Ollama to analyze customer support issues.
+Features
 
-## Features
-- Generates a polite customer reply
-- Suggests three troubleshooting steps
-- Classifies urgency as Low, Medium, or High
+- AI-generated customer replies
+- Troubleshooting recommendations
+- Urgency classification: Low, Medium, or High
+- Issue category classification
+- Customer sentiment analysis
+- Local SQLite ticket history
+- Ticket analytics dashboard
+- Search-like filtering by urgency, category, and review status
+- Ticket review tracking
+- CSV export
+- Local AI inference without an OpenAI API key
 
-## Technologies
+Technologies
+
 - Python
 - Ollama
 - Llama 3.2 1B
+- Streamlit
+- SQLite
+- Pandas
 - Requests
+- Git and GitHub
 
-## How to run
-1. Install Python and Ollama.
-2. Download the model: ollama pull llama3.2:1b
-3. Install dependencies: python -m pip install -r requirements.txt
-4. Run the application: python app.py
+Requirements
 
-This is a learning project. Review AI-generated responses before using them with real customers.
+- Python 3.10 or newer
+- Ollama installed and running
+- The "llama3.2:1b" model downloaded
+
+Installation
+
+Install the Python dependencies:
+
+python -m pip install -r requirements.txt
+
+Download the AI model:
+
+ollama pull llama3.2:1b
+
+Start the web application:
+
+python -m streamlit run web_app.py
+
+Open the local URL displayed in the terminal, usually:
+
+"http://localhost:8501"
+
+Project files
+
+- "app.py" — AI analysis logic and Ollama integration
+- "web_app.py" — Streamlit user interface and ticket management
+- "requirements.txt" — Python dependencies
+- ".gitignore" — Files excluded from Git
+- "tickets.db" — Local database created automatically
+
+Responsible use
+
+This is a learning project, not a production support system. AI responses can be inaccurate. A qualified person must review all suggestions before using them. Do not enter confidential customer information, passwords, or API keys.
+
+The project does not replace enterprise security controls, incident management, or change approval procedures.

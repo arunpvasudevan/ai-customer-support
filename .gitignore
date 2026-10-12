@@ -3,3 +3,7 @@ _pycache_/
 .venv/
 venv/
 .env
+tickets.db
+tickets.db-journal
+*.log
+.DS_Store
